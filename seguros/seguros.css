@@ -1,0 +1,65 @@
+.seguros-pg{
+  padding: 0px 20px 60px 20px;
+}
+.vantagens-bg{
+  background-color: var(--cor-12);
+}
+.vantagens{
+  padding: 120px 20px;
+}
+.vantagens-bg h2{
+  margin-bottom: 60px;
+}
+.vantagens-bg ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* padding: 60px 0px; */
+  gap: 40px;
+}
+.vantagens-bg li > img,
+.vantagens-bg li > h3{
+  margin-bottom: 10px;
+}
+.vantagens-bg p{
+  max-width: 37ch;
+}
+.perguntas-bg{
+  background-color: var(--cor-0);
+  padding: 120px 20px;
+}
+.perguntas-bg h2{
+  margin-bottom: 60px;
+}
+.perguntas-bg ul{
+  display: grid;
+}
+.perguntas-bg li{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.perguntas-bg li::before{
+  content: "";
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background-color: var(--p-1);
+  display: block;
+}
+.perguntas-bg li:nth-child(odd){
+  background-color: var(--cor-1);
+}
+@media (max-width:1100px){
+  .vantagens ul{
+    grid-template-columns: 1fr 1fr;
+  }
+  .vantagens-bg p{
+    max-width: none;
+  }
+}
+@media (max-width:800px){
+  .vantagens,
+  .perguntas-bg{
+    padding: 60px 20px;
+  }
+}

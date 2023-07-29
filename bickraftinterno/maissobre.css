@@ -1,0 +1,24 @@
+.conheca-planos-bg{
+  background-color: var(--cor-11);
+  box-shadow: inset 0px -120px var(--cor-12), inset 0px 120px var(--cor-0)
+}
+.conheca-planos-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.conheca-planos-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.conheca-planos-desc{
+  padding: 200px 0px;
+}
+.conheca-planos-desc h2{
+  margin-bottom: 32px;
+}
+.conheca-planos-desc p{
+  margin-bottom: 20px;
+}

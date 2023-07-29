@@ -1,0 +1,25 @@
+.formulario label{
+  font: 600 1rem/1.5 "Poppins",sans;
+  margin-bottom: 4px;
+  display: block;
+}
+.formulario input[type ="text"],
+.formulario input[type ="email"],
+.formulario textarea{
+  padding: 12px;
+  border: 1px solid var(--cor-2 , #ededed);
+  background: var(--cor-1 , #f7f7f7);
+  display: block;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+.formulario .col-2{
+  grid-column: span 2;
+}
+
+@media (max-width:800px){
+  .formulario .col-2{
+    grid-column: 1;
+  }
+}

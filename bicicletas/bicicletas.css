@@ -1,0 +1,130 @@
+.bicicletas-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 20px;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+}
+.bicicletas-sobre{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+.bicicletas-sobre h2,
+.bicicletas-sobre p{
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+.bicicletas-sobre li{
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  margin-bottom: 20px;
+}
+.bicicletas-sobre img{
+  width: 24px;
+  height: 24px;
+}
+.botao.mais{
+  place-self: end;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mais::after{
+  content: "";
+  display: block;
+  background-image: url(../img/icones/seta.svg);
+  width: 18px;
+  height: 10px;
+  transition: 0.2s;
+}
+.botao.mais:hover.mais::after{
+  gap: 20px;
+}
+.bicicletas-sobre h2::before{
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p-1);
+  display: block;
+  margin-bottom: 10px;
+}
+.container-bg{
+  background: linear-gradient( to right, var(--cor-0) 30% , var(--cor-11) 0%);
+}
+.nimbus{
+  position: relative;
+  place-self: start;
+
+}
+.nimbus::after{
+  content: "R$ 4999";
+  font: 500 1.125rem/1.5 "Roboto", sans-serif;
+  width: 70px;
+  height: 24px;
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.magic{
+  position: relative;
+  place-self: start;
+}
+.magic::after{
+  content: "R$ 2499";
+  font: 500 1.125rem/1.5 "Roboto", sans-serif;
+  width: 70px;
+  height: 24px;
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.nebula{
+  position: relative;
+  place-self: start;
+
+}
+.nebula::after{
+  content: "R$ 3999";
+  font: 500 1.125rem/1.5 "Roboto", sans-serif;
+  width: 70px;
+  height: 24px;
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+@media (max-width:800px){
+  .bicicletas-grid{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  .bicicletas-sobre ul{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .botao.mais{
+    place-self: start;
+    margin-bottom: 0px;
+  }
+  .container-bg{
+    background-color: var(--cor-11);
+    background-image: none;
+  }
+}

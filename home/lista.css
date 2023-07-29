@@ -1,0 +1,45 @@
+.lista-flex{
+  margin: 60px 0px 120px 0px;
+}
+.lista-flex h2{
+  margin-bottom: 20px;
+}
+.links-flex{
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+}
+.links-flex a{
+  display: block;
+}
+.links-flex img{
+  margin-bottom: 16px;
+}
+.links-flex h3{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.links-flex span{
+  padding-left: 20px;
+}
+.links-flex h3::before{
+  content: "";
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background-color: var(--p-1);
+  display: block;
+  transition: 0.2s;
+}
+.links-flex a:hover h3::before{
+  width: 24px;
+}
+.links-flex li{
+  min-width: 280px;
+}
+@media (max-width: 800px){
+  .lista-flex{
+    margin-bottom: 60px;
+  }
+}
